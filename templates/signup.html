@@ -1,0 +1,66 @@
+
+ {% load static %}
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <title>registration</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4" style="border:  2px solid blue">
+           
+          <center><h1>Registration</h1></center>
+          <form name="form1" method="post" class="login-form" action="signup">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="Username">User Name</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter Username" name="username">
+            </div>
+            <div class="form-group">
+              <label for="first_name">First Name</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter First Name" name="first_name">
+            </div>
+            <div class="form-group">
+              <label for="first_name">Last Name</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter Last Name" name="last_name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <!-- <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="Date" class="form-control" id="email" placeholder="Enter Birth Date" name="dob">
+            </div> -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="email" placeholder="Enter Password" name="password1">
+            </div>
+            <div class="form-group">
+              <label for="password">Confirm Password</label>
+              <input type="password" class="form-control" id="email" placeholder="Re-Enter Password" name="password2">
+            </div>
+             <center><button type="submit" class="btn btn-default">Submit</button></center>
+             <br>
+          </form>
+          <div class="bottom-text">
+              Already have an account? <a href="/" >login</a>
+            </div>
+             <div>
+              {% for message in messages %}
+              <h3>{{ message }}</h3>
+              {% endfor %}       
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    
+    </body>
+    </html>

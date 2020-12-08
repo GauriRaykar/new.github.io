@@ -1,0 +1,70 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edutech</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>   
+<style>
+
+.navbar-inverse {
+    background-color: #2f4f89;
+    /* border-color: #080808; */
+}
+    .back
+{
+    border:none;
+   cursor: pointer;
+   color:black;
+   margin-left: 15px;
+}
+body p{
+    font-size:  21px;
+}
+h4{
+    font-weight: 700;
+}
+</style>
+<body>     
+    <nav class="navbar navbar-inverse">
+  <ul class="nav navbar-nav"> 
+     <li><a href="/" style="margin-left: 10px;font-size: 14px;">Home</a></li>
+  </ul>
+</nav>
+
+<div class="container-fluid" style="margin-top: 10px;">
+    
+ 
+  <div class="row">
+     <div class="col-md-6">
+    <img src="{% static 'img/pro.jfif' %}" style="width:100%">
+ </div> 
+    <div class="col-md-6">
+<h1>Why Edutech</h1> 
+<h2>Awesome Solutions</h2>
+<p>Doubtnut will provide you video solutions that will blow all your doubts away - Always!</p>
+  
+  
+ <h2>Best In Class Experts</h2> 
+ <p>No matter where you are you will have access to the best in class subject matter experts!</p>
+  
+  
+  <h2>Instant Solution</h2>
+  <p>Get an awesome video solution Instantly - within seconds!</p>
+  
+  
+ <h2>Browse All Videos</h2> 
+  <p>Browse thousands of other video solutions for your class - we keep adding new videos everyday!</p>
+ </div>
+
+ </div>
+</div>
+
+
+</body>
+</html>
